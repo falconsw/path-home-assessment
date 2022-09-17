@@ -56,6 +56,11 @@ class UserRepository extends ServiceEntityRepository implements PasswordUpgrader
         $this->add($user, true);
     }
 
+    public function findOneByUserName(string $username): ?User
+    {
+        return $this->findOneBy(['email' => $username]);
+    }
+
 //    /**
 //     * @return User[] Returns an array of User objects
 //     */
