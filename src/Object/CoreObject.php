@@ -27,4 +27,14 @@ class CoreObject implements Serializable
     {
         // TODO: Implement unserialize() method.
     }
+
+    public function __serialize(): array
+    {
+        // TODO: Implement __serialize() method.
+    }
+
+    public function __unserialize(array $data): void
+    {
+        // TODO: Implement __unserialize() method.
+    }
 }
